@@ -1,0 +1,6 @@
+Articulo,null,La Historia de Pepe,Pepe,true,10/05/1995
+Libro,Mario,Juego de Tronos,George RR Martin,false,Planeta,5,650
+Revista,Mario,Hola,Paco,true,Anaya,12
+Revista,Mario,Adi�s,Paco,true,Editorial Paco,2
+Libro,Mario,El Libro de Cosas,Paco,true,Editorial Paco,2,255
+Libro,Mario,Patata,Manolo,true,PatataFrita,3,200

@@ -1,0 +1,9 @@
+admin,admin,0
+Mario,123,22
+Manolo,abc,14
+Tom,abc,23
+Andres,12345,12
+Paco,paco,54
+Lucas,abc123,17
+Enrique,111,54
+Bob,bob,74

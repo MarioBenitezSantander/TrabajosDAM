@@ -10,19 +10,27 @@ public class Actividad1_2 {
         String separador = System.getProperty("file.separator");
         String ruta = System.getProperty("user.home")+separador+"Documentos"+separador+"prueba";
         File dir = new File(ruta);
-        borrarDirectorio(dir);
+        if(borrarDirectorio(dir)){
+            System.out.println("Directorio borrado con exito");
+        }else{
+            System.out.println("No se ha podido borrar el directorio");
+        }
     }
     
-    static void borrarDirectorio(File dir){              
-        if(dir.isDirectory()){
-            if(!dir.delete()){
-                
+    static boolean borrarDirectorio(File dir){              
+        if(dir.exists()){
+            File[] files = dir.listFiles();
+            if(files != null){
+                for(File file: files){
+                    if(file.isDirectory()){
+                        borrarDirectorio(file);
+                    }else{
+                        file.delete();
+                    }
+                }
             }
-        }else{
-            dir.delete();
-            
         }
-
+        return dir.delete();
     }
 
 }

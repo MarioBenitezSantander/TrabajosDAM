@@ -2,8 +2,7 @@ package actividad1_1;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  *
@@ -48,7 +47,7 @@ public class Actividad1_1 {
         }
         
         //Creación de documento de texto en subcarpeta2
-        File doc = new File(rutaPrueba+"/subcarpeta1/subcarpeta2/doc.txt");
+        File doc = new File(rutaPrueba+"/subcarpeta1/subcarpeta2/doc3.txt");
         try{
             if(doc.createNewFile()){
                 System.out.println("Documento dentro de subcarpeta2 creado con éxito");

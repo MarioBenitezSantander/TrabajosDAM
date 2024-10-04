@@ -12,9 +12,15 @@ public class Actividad1_2 {
         String separador = System.getProperty("file.separator");
         String ruta = System.getProperty("user.home") + separador + "Documentos" + separador + "prueba";
         File dir = new File(ruta);
-        borrarDirectorio(dir);
+        if(borrarDirectorio(dir)){
+            System.out.println("Directorio borrado con éxito");
+        }else{
+            System.out.println("Error al borrar el directorio");
+        }
+        
     }
 
+    //Método que borra el árbol de directorios completo desde prueba
     static boolean borrarDirectorio(File dir) {
         File[] listaFiles = dir.listFiles();
         for (File f : listaFiles) {

@@ -15,7 +15,8 @@ public class Vehiculo implements Serializable {
     private String color;
     private boolean pinturaMetalizada;
 
-    public Vehiculo(String marca, String modelo, String anno, String color, boolean pinturaMetalizada) {
+    public Vehiculo(String marca, String modelo, String anno, 
+            String color, boolean pinturaMetalizada) {
         this.marca = marca;
         this.modelo = modelo;
         this.anno = anno;
@@ -68,7 +69,8 @@ public class Vehiculo implements Serializable {
 
     @Override
     public String toString() {
-        return "Vehiculo{" + "marca=" + marca + ", modelo=" + modelo + ", anno=" + anno + ", color=" + color + ", pinturaMetalizada=" + pinturaMetalizada + '}';
+        return marca + " " + modelo + " " + anno + " " + color +
+                " " + pinturaMetalizada;
     }
     
     
